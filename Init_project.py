@@ -1,7 +1,7 @@
-lista_liczb = []
-for liczba in range (0,100):
-  if liczba %5 == 0:
-    lista_liczb.append(liczba)
-    print(liczba)
-potegowanie = [p * p *p for p in lista_liczb]
-print(potegowanie) 
+lista_zakupów = {'piekarnia' : ['chleb', 'pączek', 'drożdżówka'], 'warzywniak' : ['pomidor', 'ogórek', 'marchewka', 'seler'] }
+ilosc = 0
+for sklep, rzeczy in lista_zakupów.items():
+  print("Idę do, {} kupuję {}" .format(sklep, rzeczy))
+  ilosc += len(rzeczy)
+  
+print("W sumie kupuję {} produktów" .format (ilosc))
